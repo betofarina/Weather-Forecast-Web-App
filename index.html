@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Envato Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://rawgit.com/marvelapp/devices.css/master/assets/devices.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="col-sm-12">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" id="scrollb" style="overflow-y: scroll; overflow-x: hidden; height: 600px; ">
+
+            <div><img src="img/logojr.png" alt="the envato weather app" id="logo"></div>
+            <div class="screen"></div>
+
+            <form method="get" class="form">
+                <fieldset>
+
+                    <ul class="list-reset">
+                        <li class="form-field">
+                            <input type="checkbox" id="geolocation">
+                            <label for="geolocation">Use my location</label>
+                        </li>
+                        <li class="form-field">
+                            <label for="city-search">City Name</label>
+                            <input type="text" id="city-search" placeholder="e.g. Rochester, NY">
+                        </li>
+
+                        <li class="form-field">
+                            <label for="latitude">Latitude</label>
+                            <input type="text" id="latitude" placeholder="e.g. 42.9150747" required>
+                        </li>
+
+                        <li class="form-field">
+                            <label for="longitude">Longitude</label>
+                            <input type="text" id="longitude" placeholder="e.g. -77.784323" required>
+                        </li>
+
+                        <li class="form-field">
+                            <input type="checkbox" id="celsius">
+                            <label for="celsius">Report Celsius</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div class="buttondiv">
+                    <button>Get Weather</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-3"></div>
+
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
